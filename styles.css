@@ -1,0 +1,113 @@
+body {
+    /* ## Colors
+
+    ### Primary */
+
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+
+    /* ### Neutral */
+
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header button {
+    border: 1px solid var(--light-pink);
+    border-radius: 30px;
+    background-color: white;
+    color: var(--light-pink);
+    padding: .2rem .7rem;
+}
+
+main {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+section#intro h1 {
+    margin-bottom: 1.5rem   ;
+}
+
+section#intro p {
+    margin-bottom: 2rem;
+}
+
+section#intro button {
+    border: 1px solid var(--light-pink);
+    border-radius: 30px;
+    background-color: var(--pink);
+    color: var(--very-pale-blue);
+    padding: .7rem 2.3rem;
+    font-weight: 600;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+main .mockups {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+section#numbers {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+section#numbers h2{
+    font-size: 3rem;
+}
+
+section#numbers p {
+    color: gray;
+}
+
+.number-card:nth-child(1) img {
+    width: 30px;
+    height: 25px;
+}
+
+.number-card:nth-child(2) img{
+    width: 20px;
+    height: 15px;
+}
+
+.number-card .card-heading {
+    width: fit-content;
+    margin-inline: auto;
+    text-align: left;
+}
+
+section#features {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+section#features img {
+    width: 100%;
+}
