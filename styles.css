@@ -187,6 +187,10 @@ footer .inner-footer {
     margin-bottom: 1rem;
 }
 
+.inner-footer .newsletter {
+    margin-bottom: 4rem;
+}
+
 .inner-footer .newsletter p {
     margin-bottom: 2rem;
 }
@@ -212,4 +216,32 @@ footer .inner-footer {
     font-weight: 600;
     width: 45%;
     align-self: flex-end;
+}
+
+footer .logo p {
+    margin-top: 1rem;
+}
+
+footer .email-phone {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+footer .email-phone div{
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social-networks {
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 1.2rem;
+    color: white;
+}
+
+footer .social-networks a i {
+    font-size: 25px;
+    color: white;
 }
