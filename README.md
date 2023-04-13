@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/Robertron624/huddle-landing-page-with-curved-sections)
+- Live Site URL: [Live site URL](https://your-live-site-url.com)
 
 ## My process
 
@@ -45,28 +45,54 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+With this project I learned how to use SVGs and how to scale them to fit the design to add the features section some waves to top and bottom of the content. Also I learn about how SVGs behave(they aren't normal images) for changing its width,height and colors.
 
-To see how you can add code snippets, see below:
-
+Here it's the HTML for the features section:
 ```html
-<h1>Some HTML code I'm proud of</h1>
+      <div class="feature-card">
+        <div class="top-wave"></div>
+        <div class="inner-card">
+          <img src="./images/illustration-grow-together.svg" alt="grow together illustration">
+          <div class="card-text">
+            <h2>Grow Together</h2>
+            <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form.</p>
+          </div>
+        </div>
+        <div class="bottom-wave"></div>
+      </div>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
+Here it's the little javascript I used to validate the newsletter form:
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+    const newsletterInput = document.querySelector('.newsletter form input');
+
+    const errorMessage = document.querySelector('.newsletter form span');
+
+    const newsletterForm = document.querySelector('.newsletter form');
+
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    newsletterForm.addEventListener('submit', handleNewsletter)
+
+    function handleNewsletter (e) {
+      e.preventDefault();
+
+      // check if email is valid and if it's empty
+      if(!emailRegex.test(newsletterInput.value)) {
+        errorMessage.classList.remove('inactive');
+        newsletterInput.classList.add('input-error');
+        return
+      }
+
+      errorMessage.classList.add('inactive');
+      newsletterInput.classList.remove('input-error');
+      console.log("forn submitted!!")
+    }
 ```
-
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to keep learning new CSS patterns and work with SVGs more, I think they are a great way to add some style to a website, also I want to work with new figures to separate sections and add some style to the website.
 
 ### Useful resources
 
@@ -75,8 +101,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Personal Website - [Robert Ramirez](https://robert-ramirez.netlify.app)
+- Frontend Mentor User- [@Robertron624](https://www.frontendmentor.io/profile/Robertron624)
+- Twitter - [@robertdowny](https://www.twitter.com/robertdowny)
 

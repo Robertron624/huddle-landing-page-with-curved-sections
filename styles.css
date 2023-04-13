@@ -259,6 +259,11 @@ footer .inner-footer {
     outline: 1px solid var(--light-red);
 }
 
+.newsletter form span {
+    color: var(--light-red);
+    font-size: .75rem;
+}
+
 footer .logo p {
     margin-top: .41rem;
     font-size: .875rem;
@@ -367,8 +372,6 @@ span.inactive {
         background: url(./images/bg-section-bottom-desktop-1.svg);
     }
 
-
-
     .feature-card:nth-child(3) .top-wave {
         background-size: cover !important;
         height: 98px;
@@ -420,11 +423,6 @@ span.inactive {
 
     .newsletter form button {
         width: 30%;
-    }
-
-    .newsletter form span {
-        color: var(--light-red);
-        font-size: .75rem;
     }
 
     .newsletter p {
