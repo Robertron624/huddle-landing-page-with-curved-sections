@@ -6,6 +6,7 @@ body {
     --pink: hsl(322, 100%, 66%);
     --light-pink: hsl(321, 100%, 78%);
     --light-red: hsl(0, 100%, 63%);
+    --social-hover: hsl(192, 100%, 49%);
 
     /* ### Neutral */
 
@@ -274,6 +275,7 @@ footer .social-networks {
 footer .social-networks a i {
     font-size: 25px;
     color: white;
+    transition: all .5s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -336,6 +338,34 @@ footer .social-networks a i {
         order: 1;
     }
 
+
+    .feature-card:nth-child(1) .top-wave {
+        background-size: cover !important;
+        height: 160px;
+        background: url(./images/bg-section-top-desktop-1.svg);
+    }
+    
+    .feature-card:nth-child(1) .bottom-wave {
+        background-size: cover !important;
+        height: 98px;
+        background: url(./images/bg-section-bottom-desktop-1.svg);
+    }
+
+
+
+    .feature-card:nth-child(3) .top-wave {
+        background-size: cover !important;
+        height: 98px;
+        background: url(./images/bg-section-top-desktop-2.svg);
+    }
+    
+    .feature-card:nth-child(3) .bottom-wave {
+        background-size: cover !important;
+        height: 138px;
+        background: url(./images/bg-section-bottom-desktop-2.svg);
+    }
+
+
     section#ready h2 {
         font-size: 2.5rem;
     }
@@ -343,6 +373,12 @@ footer .social-networks a i {
     section#ready button {
         width: 18rem;
         padding: 1rem 0;
+    }
+
+    footer .footer-wave {
+        background: url(./images/bg-footer-top-desktop.svg);
+        height: 150px;
+        background-size: cover;
     }
 
     footer .inner-footer {
@@ -360,10 +396,6 @@ footer .social-networks a i {
         flex-direction: row !important;
     }
 
-    footer .footer-wave {
-        height: 150px;
-    }
-
     .newsletter form input {
         width: 60%;
     }
@@ -376,8 +408,8 @@ footer .social-networks a i {
         padding-right: 3rem;
     }
 
-    .feature-card:nth-child(3) .bottom-wave {
-        height: 142px;
+    footer .social-networks a i:hover {
+        color: var(--social-hover);
     }
 
 }

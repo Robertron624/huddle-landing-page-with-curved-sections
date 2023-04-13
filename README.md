@@ -68,8 +68,6 @@ const proudOfThisFunc = () => {
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [CSS Wave Background | VERY SIMPLE TUTORIAL | HOW-TO](https://www.youtube.com/watch?v=HwnlC_40OzQ) - This video helped me add the shapes to the features cards in a simple way. I'd recommend it to anyone still learning this concept.
