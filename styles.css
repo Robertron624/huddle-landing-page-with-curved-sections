@@ -349,7 +349,7 @@ footer .social-networks a i {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 5rem 4.5rem 2.5rem;
-        gap: 34rem;
+        gap: 29rem;
     }
 
     footer .inner-footer .newsletter {
@@ -360,5 +360,24 @@ footer .social-networks a i {
         flex-direction: row !important;
     }
 
+    footer .footer-wave {
+        height: 150px;
+    }
+
+    .newsletter form input {
+        width: 60%;
+    }
+
+    .newsletter form button {
+        width: 30%;
+    }
+
+    .newsletter p {
+        padding-right: 3rem;
+    }
+
+    .feature-card:nth-child(3) .bottom-wave {
+        height: 142px;
+    }
 
 }
