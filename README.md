@@ -26,12 +26,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-
+![image](https://user-images.githubusercontent.com/72587880/231843903-50d51380-b282-42a9-b249-8b05f7cf4b25.png)
 
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/Robertron624/huddle-landing-page-with-curved-sections)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://resonant-kitten-e6d94d.netlify.app/)
 
 ## My process
 
