@@ -95,9 +95,9 @@
         <h2>NEWSLETTER</h2>
         <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
           send you spam or pass on your email address</p>
-          <form action="POST">
+          <form>
             <div class="input-container">
-              <input type="email" name="email">
+              <input type="text">
               <button type="submit">Subscribe</button>
             </div>
             <span class="inactive">Check your email please</span>
@@ -136,5 +136,33 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script>
+    const newsletterInput = document.querySelector('.newsletter form input');
+
+    const errorMessage = document.querySelector('.newsletter form span');
+
+    const newsletterForm = document.querySelector('.newsletter form');
+
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    console.log(newsletterInput)
+
+    newsletterForm.addEventListener('submit', handleNewsletter)
+
+    function handleNewsletter (e) {
+      e.preventDefault();
+
+      // check if email is valid and if it's empty
+      if(!emailRegex.test(newsletterInput.value)) {
+        errorMessage.classList.remove('inactive');
+        newsletterInput.classList.add('input-error');
+        return
+      }
+
+      errorMessage.classList.add('inactive');
+      newsletterInput.classList.remove('input-error');
+      console.log("forn submitted!!")
+    }
+  </script>
 </body>
 </html>

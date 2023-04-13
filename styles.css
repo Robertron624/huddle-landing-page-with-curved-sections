@@ -255,6 +255,10 @@ footer .inner-footer {
     transition: all .8s ease-in-out;
 }
 
+.input-error {
+    outline: 1px solid var(--light-red);
+}
+
 footer .logo p {
     margin-top: .41rem;
     font-size: .875rem;
