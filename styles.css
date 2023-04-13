@@ -230,12 +230,20 @@ footer .inner-footer {
 }
 
 .newsletter form input {
+    width: 90%;
     border: none;
     border-radius: 10px;
     padding: 1rem 1rem;
 }
 
+.newsletter form .input-container {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .newsletter form button {
+    float: right;
     border: none;
     border-radius: 10px;
     padding: 1rem 1rem;
@@ -276,6 +284,10 @@ footer .social-networks a i {
     font-size: 25px;
     color: white;
     transition: all .5s ease-in-out;
+}
+
+span.inactive {
+    visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -392,8 +404,10 @@ footer .social-networks a i {
         order: 1;
     }
 
-    .inner-footer .newsletter form {
-        flex-direction: row !important;
+    .newsletter form .input-container {
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: row;
     }
 
     .newsletter form input {
@@ -402,6 +416,11 @@ footer .social-networks a i {
 
     .newsletter form button {
         width: 30%;
+    }
+
+    .newsletter form span {
+        color: var(--light-red);
+        font-size: .75rem;
     }
 
     .newsletter p {
